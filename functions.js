@@ -4,6 +4,17 @@
  * @return {string} the number as a string
  */
 
+function numberToString(n){
+
+ var num=n.toString(); 
+ console.log(num);
+
+	return num;
+
+}
+
+numberToString(6);
+
 
 /**
  * Adds one to a given number.
