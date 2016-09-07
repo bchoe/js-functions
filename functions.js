@@ -92,6 +92,12 @@ multiply(5,2);
  * @return {number} the quotient
  */
 
+function divide(x,y){
+	var quotient=x/y;
+	console.log(quotient);
+	return quotient;
+}
+divide(10,2);
 
 /**
  * Multiplies a number by itself.
