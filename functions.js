@@ -51,6 +51,12 @@ decrease(2);
  * @return {number} the sum
  */
 
+function add(x,y){
+	var sum= x+y;
+	console.log(sum);
+	return sum;
+}
+add(2,2);
 
 /**
  * Subtracts the second number from the first.
