@@ -65,6 +65,12 @@ add(2,2);
  * @return {number} the difference
  */
 
+function subtract(x,y){
+	var difference=x-y;
+	console.log(difference);
+	return difference;
+}
+subtract(4,1);
 
 /**
  * Multiplies two numbers.
@@ -72,7 +78,12 @@ add(2,2);
  * @param {number} y
  * @return {number} the product
  */
-
+function multiply(x,y){
+	var product=x*y;
+	console.log(product);
+	return product;
+}
+multiply(5,2);
 
 /**
  * Divides the first number by the second.
