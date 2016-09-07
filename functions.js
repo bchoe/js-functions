@@ -21,6 +21,15 @@ numberToString(6);
  * @param {number} n
  * @return {number}
  */
+function increase(n){
+	
+	var num = n + 1 ;
+	
+	console.log(num);
+
+	return num;
+}
+increase(6);
 
 
 /**
@@ -28,7 +37,9 @@ numberToString(6);
  * @param {number} n
  * @return {number}
  */
-
+function decrease(n){
+	
+}
 
 /**
  * Adds two numbers.
