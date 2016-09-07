@@ -121,9 +121,26 @@ square(2);
  * @return {number} the result
  */
 
-function calculate(x,y){
-	var 
+function calculate(opp,x,y){
+	if(opp==='add'){
+		console.log(x + " + " + y + " = " + (x+y));
+		return add(x,y);
+	}else if(opp==='subtract'){
+		console.log(x + " - " + y + " = " + (x-y));
+		return subtract(x,y);
+	}else if(opp==='multiply'){
+		console.log(x + " * " + y + " = " + (x*y));
+		return multiply(x,y);
+	}else if(opp==='divide'){
+		console.log(x + " / " + y + " = " + (x/y));
+		return divide(x,y);
+	}else{
+		return false;
+	}
+	
 }
+	
+
 
 /**
  * Returns true if `a` is greater than `b`.
