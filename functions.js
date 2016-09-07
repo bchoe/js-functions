@@ -139,7 +139,7 @@ function calculate(opp,x,y){
 	}
 	
 }
-	
+	console.log(calculate("add",2,2));
 
 
 /**
@@ -149,7 +149,14 @@ function calculate(opp,x,y){
  * @return {boolean} `a` is larger than `b`
  */
 
-
+function isGreaterThan(a,b){
+	if(a>b){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log (isGreaterThan(10,5));
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
@@ -157,7 +164,14 @@ function calculate(opp,x,y){
  * @return {boolean} `a` is smaller than `b`
  */
 
-
+function isLessThan(a,b){
+	if(a<b){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(isLessThan(5,10));
 /**
  * Returns true if `a` and `b` are equal.
  * @param {number} a
@@ -165,7 +179,14 @@ function calculate(opp,x,y){
  * @return {boolean} the numbers are equal
  */
 
-
+function areEqual(a,b){
+	if(a===b){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log (areEqual(5,5));
 /**
  * Returns the smallest value of two numbers.
  * @param {number} x
@@ -173,6 +194,14 @@ function calculate(opp,x,y){
  * @return {number} the smallest number
  */
 
+function minimum(x,y){
+	if (x<y) {
+		return x;
+	} else {
+		return y;
+	}
+}
+minimum(4,8);
 
 /**
  * Returns the largest value of two numbers.
@@ -181,7 +210,14 @@ function calculate(opp,x,y){
  * @return {number} the largest number
  */
 
-
+function maximum(x,y){
+	if(x>y){
+		return x;
+	}else{
+		return y;
+	}
+}
+maximum (8,4);
 /**
  * Returns true if `n` is even.
  * @param {number} n
