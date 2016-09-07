@@ -105,7 +105,13 @@ divide(10,2);
  * @return {number} squared
  */
 
+function square(x){
+	var squared= x*x ;
+	console.log(squared);
+	return squared;
+}
 
+square(2);
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
@@ -115,6 +121,9 @@ divide(10,2);
  * @return {number} the result
  */
 
+function calculate(x,y){
+	var 
+}
 
 /**
  * Returns true if `a` is greater than `b`.
