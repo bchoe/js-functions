@@ -38,8 +38,11 @@ increase(6);
  * @return {number}
  */
 function decrease(n){
-	
+	var num = n - 1;
+	console.log(num);
+	return num;
 }
+decrease(2);
 
 /**
  * Adds two numbers.
