@@ -6,7 +6,7 @@
 
 function numberToString(n){
 
- var num=n.toString(); 
+ var num=n.toString();
  console.log(num);
 
 	return num;
@@ -22,9 +22,9 @@ numberToString(6);
  * @return {number}
  */
 function increase(n){
-	
+
 	var num = n + 1 ;
-	
+
 	console.log(num);
 
 	return num;
@@ -137,7 +137,7 @@ function calculate(opp,x,y){
 	}else{
 		return false;
 	}
-	
+
 }
 	console.log(calculate("add",2,2));
 
@@ -224,13 +224,23 @@ maximum (8,4);
  * @return {boolean} the number is even
  */
 
-
+function isEven(n){
+	if (n%2===0) {
+		return true;
+	} else {
+		return false;
+	}
+}
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function isOdd(n){
+	if (n%1===0){
+		return true;
+	}
+}
 
 /**
  * Returns a letter grade.
@@ -243,7 +253,30 @@ maximum (8,4);
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+function letterGrade(score,total){
+  var gradeScore = score/total * 100;
 
+  if(gradeScore >= 90){
+    return 'A';
+  }else if(gradeScore < 90 && gradeScore>= 80)
+
+  {
+    return 'B';
+  }else if(gradeScore < 80 && gradeScore>=70)
+
+  {
+    return 'C';
+  }else if (gradeScore < 70 && gradeScore>=60)
+
+  {
+    return 'D';
+  }else
+
+  {
+    return 'F';
+  }
+
+ }
 
 /**
  * Checks if a `restaurant` object has a `reviews` property.
@@ -253,6 +286,17 @@ maximum (8,4);
  * @return {object} restaurant
  */
 
+function incrementReviews(restaurant){
+  if(restaurant.reviews === undefined){
+    restaurant.reviews = 1;
+    return restaurant;
+  }
+  else if(restaurant.reviews > 0){
+    restaurant.reviews += 1;
+    return restaurant;
+  }
+ }
+
 
 /**
  * Joins two strings with a space.
@@ -260,6 +304,12 @@ maximum (8,4);
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+
+function combine(word1, word2){
+
+  return word1 + " " + word2;
+
+ }
 
 
 /**
@@ -270,3 +320,10 @@ maximum (8,4);
  * @return {object} circle
  */
 
+function createCircle(radius) {
+   var circle = {
+     circumference: 2*(Math.PI)*radius,
+     area: (Math.PI)*radius*radius
+   };
+   return circle;
+}
